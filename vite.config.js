@@ -5,8 +5,9 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/portfolio-app/",
-  plugins: [react(),tailwindcss()],
+  // 1. Change the base path to root for Vercel
+  base: "/", 
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
