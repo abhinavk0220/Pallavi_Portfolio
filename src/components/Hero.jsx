@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
-<img src="/image.jpeg" alt="Hero representation" />
 
 const Hero = ({ scrollToSection }) => {
   const containerVariants = {
@@ -71,11 +70,22 @@ const Hero = ({ scrollToSection }) => {
             </a>
           </motion.div>
         </motion.div>
+        
         <motion.div 
           className="hidden md:block"
           variants={itemVariants}
         >
-          <img src={profileImage} alt="Pallavi Kumari" className="rounded-full shadow-2xl w-96 h-96 object-cover mx-auto" style={{ maskImage: 'radial-gradient(circle, white 60%, transparent 100%)', WebkitMaskImage: 'radial-gradient(circle, white 60%, transparent 100%)', boxShadow: '0 0 30px rgba(255, 255, 255, 0.2)' }} />
+          {/* Changed src={profileImage} to src="/image.jpeg" */}
+          <img 
+            src="/image.jpeg" 
+            alt="Pallavi Kumari" 
+            className="rounded-full shadow-2xl w-96 h-96 object-cover mx-auto" 
+            style={{ 
+              maskImage: 'radial-gradient(circle, white 60%, transparent 100%)', 
+              WebkitMaskImage: 'radial-gradient(circle, white 60%, transparent 100%)', 
+              boxShadow: '0 0 30px rgba(255, 255, 255, 0.2)' 
+            }} 
+          />
         </motion.div>
       </div>
 
