@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
-import profileImage from '/image.jpeg';
+<img src="/image.jpeg" alt="Hero representation" />
 
 const Hero = ({ scrollToSection }) => {
   const containerVariants = {
